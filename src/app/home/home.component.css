@@ -11,23 +11,25 @@
 
 header {
     width: 100vw;
-    height: 150px;
+    height: 200px;
     background-repeat: no-repeat;
     color: #333;
     font-family: 'Courgette', cursive;
     justify-content: space-evenly;
 }
 
-.logoImage {
-    width: 150px;
-    height: 150px;
+.slogan {
+    font-weight: bold;
 }
 
-.slogan {
-    font-weight: 900;
+.firstPgh {
+    font-size: 2.5vw;
+    background-blend-mode: color;
+    line-height: 0.1em;
 }
 
 .addQuote {
     font-size: 23px;
-    margin-top: 55px;
+    margin-top: 20px;
+    font-weight: bold;
 }
