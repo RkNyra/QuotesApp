@@ -1,8 +1,17 @@
 .homePage {
     width: 100vw;
-    height: 150px;
+    height: 100vh;
     background-image: url(../../assets/homeBgImg1.jpg);
     background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: #333;
+    font-family: 'Courgette', cursive;
+    justify-content: space-evenly;
+}
+
+header {
+    width: 100vw;
+    height: 150px;
     background-repeat: no-repeat;
     color: #333;
     font-family: 'Courgette', cursive;
@@ -16,4 +25,9 @@
 
 .slogan {
     font-weight: 900;
+}
+
+.addQuote {
+    font-size: 23px;
+    margin-top: 55px;
 }
