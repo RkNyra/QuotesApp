@@ -4,10 +4,9 @@
 
 blockquote {
     font-size: 1.4em;
-    margin: 50px auto;
-    font-style: italic;
-    color: #555555;
-    padding: 1.2em 30px 1.2em 75px;
+    margin: 20px auto;
+    color: #333;
+    padding: 1.2em 30px 1.2em 70px;
     border-left: 8px solid #3551C7;
     line-height: 1.6;
     position: relative;
@@ -36,4 +35,38 @@ blockquote span {
     color: #333333;
     font-style: normal;
     margin-top: 1em;
+}
+
+.vote {
+    display: flex;
+    justify-content: space-between;
+}
+
+.circular {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border-radius: 150px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+
+a.circular {
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out;
+}
+
+a.circular:hover {
+    opacity: 1;
+}
+
+.btn-downVote {
+    background-image: url(../../assets/downVote.jpeg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.btn-upVote {
+    background-image: url(../../assets/upVote.jpeg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
