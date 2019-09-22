@@ -52,3 +52,14 @@
 .quotesDisplay {
     margin-top: 20px;
 }
+
+.footer {
+    width: 100vw;
+    height: 10vh;
+    background: black;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 57px;
+}

@@ -13,6 +13,7 @@ quotes:Quote[] = [
     {quote:'Wine is constant proof that God loves us and loves to see us happy.',author:'Benjamin Franklin',submittedBy:'RK Nyra'},
     {quote:'If you think women are the weaker sex, try pulling the blanket back to your side',author:'Stuart Turner',submittedBy:'Judd Knight'},
     {quote:'Have you noticed that all the people in favor of birth control are already born?',author:'Benny Hill',submittedBy:'Lisa Kempton'},
+    {quote:'Have you noticed that all the people in favor of birth control are already born?',author:'Benny Hill',submittedBy:'Lisa Kempton'},
   ];
 
   constructor() { }
