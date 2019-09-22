@@ -7,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+showForm: boolean = false
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  addQuote(){
+    this.showForm = true
   }
 
 }

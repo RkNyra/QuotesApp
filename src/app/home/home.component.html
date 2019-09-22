@@ -9,14 +9,14 @@
 
             <p class="firstPgh">Share your favorite quotes and get your friends to vote on them!</p>
 
-            <button class="btn btn-outline-dark btn-change addQuote" type="button">Add Quote</button>
+            <button class="btn btn-outline-dark btn-change addQuote" type="button" (click)='addQuote()'>Add Quote</button>
 
         </div>
     </div>
 
     <!-- Quote Form Div -->
 
-    <div class="popUpFormBg">
+    <div class="popUpFormBg" *ngIf='showForm'>
         <div class="row justify-content-center quoteFormDisplay">
             <div class="col-lg-7">
                 <app-quotes-form></app-quotes-form>
