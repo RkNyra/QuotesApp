@@ -1,21 +1,23 @@
-<div class="col-lg-4" *ngFor='let quote of quotes'>
-    <div>
-        <blockquote>
-            {{quote.quote}}
+<div class="row">
+    <div class="col-lg-4" *ngFor='let quote of quotes'>
+        <div>
+            <blockquote>
+                <p class="quoteHeight">{{quote.quote}}</p>
 
-            <span>~{{quote.author}}</span>
+                <span>~{{quote.author}}</span>
 
-            <p class="submittedBy">Submitted by: {{quote.submittedBy}}</p>
+                <p class="submittedBy">Submitted by: {{quote.submittedBy}}</p>
 
-            <div class="vote">
-                <!-- downvote -->
-                <a href="#" class="btn-downVote circular"></a>
+                <div class="vote">
+                    <!-- downvote -->
+                    <a href="#" class="btn-downVote circular"></a>
 
-                <!-- upvote -->
-                <a href="#" class="btn-upVote circular"></a>
-            </div>
+                    <!-- upvote -->
+                    <a href="#" class="btn-upVote circular"></a>
+                </div>
 
-        </blockquote>
+            </blockquote>
 
+        </div>
     </div>
 </div>

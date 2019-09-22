@@ -13,6 +13,10 @@ blockquote {
     background: #EDEDED;
 }
 
+.quoteHeight {
+    height: 180px;
+}
+
 blockquote::before {
     content: "\201C";
     color: #3551C7;
