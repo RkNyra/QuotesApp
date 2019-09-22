@@ -5,19 +5,34 @@
     <form>
         <div class="form-group">
             <label for="insertQuote">Insert Quote</label>
-            <textarea class="form-control" placeholder="Insert your quote here" required [(ngModel)]='quote.quote' [ngModelOptions]='{standalone:true}'></textarea>
+            <textarea class="form-control" placeholder="Insert your quote here" required [(ngModel)]='quote.quote' [ngModelOptions]='{standalone:true}' name="quote" #quote="ngModel"></textarea>
+
+            <!-- form validation -->
+            <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger">
+                <p>This input is required</p>
+            </div>
+
         </div>
         <div>
             <div class="form-group">
                 <!-- quoteAuthorName -->
                 <label for="quoteAuthorName">Quote Author Name</label>
-                <input class="form-control" type="text" placeholder="Insert Quote Author's Name" required [(ngModel)]='quote.author' [ngModelOptions]='{standalone:true}'>
+                <input class="form-control" type="text" placeholder="Insert Quote Author's Name" required [(ngModel)]='quote.author' [ngModelOptions]='{standalone:true}' name="author" #author="ngModel">
+
+                <!-- form validation -->
+                <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
+                    <p>This input is required</p>
+                </div>
             </div>
 
             <div class="form-group">
                 <!-- submittedByInput -->
                 <label for="submittedBy">Submitted By</label>
-                <input class="form-control" type="text" placeholder="Insert your name here" required [(ngModel)]='quote.submittedBy' [ngModelOptions]='{standalone:true}'>
+                <input class="form-control" type="text" placeholder="Insert your name here" required [(ngModel)]='quote.submittedBy' [ngModelOptions]='{standalone:true}' name="submittedBy" #submittedBy="ngModel">
+                <!-- form validation -->
+                <div [hidden]="submittedBy.valid || submittedBy.pristine" class="alert alert-danger">
+                    <p>This input is required</p>
+                </div>
             </div>
         </div>
 

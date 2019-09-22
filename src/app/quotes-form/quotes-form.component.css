@@ -1,0 +1,20 @@
+.popUpFormBg {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quoteFormDisplay {
+    width: 50%;
+    height: 80%;
+    background-color: #ECECEC;
+    text-align: center;
+    position: relative;
+    padding: 20px;
+    border-radius: 5px;
+}

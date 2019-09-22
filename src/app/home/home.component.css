@@ -36,12 +36,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* display: none; */
 }
 
 .quoteFormDisplay {
     width: 50%;
-    height: 70%;
+    height: 95%;
     background-color: #ECECEC;
     text-align: center;
     position: relative;
