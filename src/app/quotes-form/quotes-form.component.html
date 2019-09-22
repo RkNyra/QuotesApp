@@ -5,23 +5,23 @@
     <form>
         <div class="form-group">
             <label for="insertQuote">Insert Quote</label>
-            <textarea class="form-control" placeholder="Insert your quote here" required></textarea>
+            <textarea class="form-control" placeholder="Insert your quote here" required [(ngModel)]='quote.quote' [ngModelOptions]='{standalone:true}'></textarea>
         </div>
         <div>
             <div class="form-group">
                 <!-- quoteAuthorName -->
                 <label for="quoteAuthorName">Quote Author Name</label>
-                <input class="form-control" type="text" placeholder="Insert Quote Author's Name" required>
+                <input class="form-control" type="text" placeholder="Insert Quote Author's Name" required [(ngModel)]='quote.author' [ngModelOptions]='{standalone:true}'>
             </div>
 
             <div class="form-group">
                 <!-- submittedByInput -->
                 <label for="submittedBy">Submitted By</label>
-                <input class="form-control" type="text" placeholder="Insert your name here" required>
+                <input class="form-control" type="text" placeholder="Insert your name here" required [(ngModel)]='quote.submittedBy' [ngModelOptions]='{standalone:true}'>
             </div>
         </div>
 
-        <button class="btn btn-outline-dark btn-change" type="submit" (click)='submitQuote()'>Submit</button>
+        <button class="btn btn-outline-dark btn-change" type="submit" (click)=' submitQuote() '>Submit</button>
 
     </form>
 </div>

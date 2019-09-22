@@ -20,4 +20,7 @@ showForm: boolean = false
   hideForm(){
     this.showForm = false
   }
+  submitData(quote){
+
+  }
 }
