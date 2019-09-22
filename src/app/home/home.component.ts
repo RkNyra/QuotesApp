@@ -17,5 +17,7 @@ showForm: boolean = false
   addQuote(){
     this.showForm = true
   }
-
+  hideForm(){
+    this.showForm = false
+  }
 }
