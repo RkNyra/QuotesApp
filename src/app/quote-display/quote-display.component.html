@@ -1,0 +1,10 @@
+<div class="row justify-content-center">
+    <div *ngFor='let quote of quotes' class="col-md-3 quoteDisplayDiv">
+        <div>
+            <div> {{quote.quote}}</div>
+            <div> ~{{quote.author}} </div>
+            <div> Submitted By: {{quote.submittedBy}} </div>
+        </div>
+    </div>
+
+</div>
