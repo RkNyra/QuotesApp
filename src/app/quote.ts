@@ -3,4 +3,6 @@ export class Quote {
   author: string;
   submittedBy:  string;
   date: Date;
+  upvote?: number;
+  downvote?: number;
 }

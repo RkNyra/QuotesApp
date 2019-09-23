@@ -31,7 +31,7 @@ showForm: boolean = false
     this.showForm = false
   }
   submitData(quote){
-
+console.log(quote);
     quote.date = new Date;
     this.quotes.push(quote)
   }

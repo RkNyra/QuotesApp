@@ -11,7 +11,7 @@ export class QuotesFormComponent implements OnInit {
   @Output() showForm = new EventEmitter<boolean>();
   @Output() emitNewQuote = new EventEmitter<any>();
 
-quote: Quote [] = [];
+quotes: Quote [] = [];
 
   constructor() { }
 
@@ -20,6 +20,6 @@ quote: Quote [] = [];
 }
 submitQuote(){
   this.showForm.emit();
-  this.emitNewQuote.emit(this.quote);
+  this.emitNewQuote.emit(this.quotes);
 }
 }
