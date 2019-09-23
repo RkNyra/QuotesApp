@@ -8,8 +8,10 @@ import { Quote } from '../quote';
   styleUrls: ['./quotes-form.component.css']
 })
 export class QuotesFormComponent implements OnInit {
+  newQuote = new Quote("", "", "", new Date, 0, 0)
   @Output() showForm = new EventEmitter<boolean>();
   @Output() emitNewQuote = new EventEmitter<any>();
+  @Output() addQuote = new EventEmitter<Quote>();
 
 quotes: Quote [] = [];
 
@@ -21,5 +23,9 @@ quotes: Quote [] = [];
 submitQuote(){
   this.showForm.emit();
   this.emitNewQuote.emit(this.quotes);
+  this.addQuote.emit(this.newQuote);
+  console.log(this.addQuote.emit(this.newQuote));
+  
 }
 }
+
