@@ -50,7 +50,8 @@ export class HomeComponent implements OnInit {
  }
  deleteQuote(isHide,index){
    if(isHide){
-     let toDelete = confirm (`Are you sure you want to delete${this.quotes[1].quote}?`)
+    //  let toDelete = confirm (`Are you sure you want to delete ${this.quotes[index].quote}?`)
+    let toDelete = confirm (`Are you sure you want to delete this quote?`)
      if(toDelete){
        this.quotes.splice(index,1)
        }
