@@ -38,7 +38,7 @@ export class HomeComponent implements OnInit {
     this.quotes.push(quote)
   }
   downVote(quote){
-    quote.downvote +=-1;
+    quote.downvote +=1;
     console.log(quote);
 
   }

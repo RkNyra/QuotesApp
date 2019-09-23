@@ -14,13 +14,13 @@
                     <!-- downvote -->
                     <div class="flex-direction-row">
                         <a (click)='downVote(quote)' class="btn-downVote circular"></a>
-                        <p>{{quote.downvote}} dislikes</p>
+                        <p class="voteCaption">{{quote.downvote}} dislikes</p>
                     </div>
 
                     <!-- upvote -->
                     <div class="flex-direction-row">
                         <a (click)='upVote(quote)' class="btn-upVote circular"></a>
-                        <p>{{quote.upvote}} likes</p>
+                        <p class="voteCaption">{{quote.upvote}} likes</p>
                     </div>
                 </div>
 
