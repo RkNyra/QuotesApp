@@ -10,9 +10,9 @@ import { Quote } from '../quote';
 export class HomeComponent implements OnInit {
 
   quotes: Quote[] = [
-    {quote:'They say a person needs just three things to be truly happy in this world: someone to love, something to do, and something to hope for.',author:'Tom Bodett',submittedBy:'Stl SuperG', date: new Date(2019,9,14),  upvote: 0, downvote: 0},
-    {quote:'Wine is constant proof that God loves us and loves to see us happy.',author:'Benjamin Franklin',submittedBy:'RK Nyra', date: new Date(2019,9,14),  upvote: 0, downvote: 0},
-    {quote:'If you think women are the weaker sex, try pulling the blanket back to your side',author:'Stuart Turner',submittedBy:'Judd Knight', date: new Date(2019,9,14), upvote: 0, downvote: 0},
+    {quote:'They say a person needs just three things to be truly happy in this world: someone to love, something to do, and something to hope for.',author:'Tom Bodett',submittedBy:'Stl SuperG', date: new Date(2019,8,14),  upvote: 0, downvote: 0},
+    {quote:'Wine is constant proof that God loves us and loves to see us happy.',author:'Benjamin Franklin',submittedBy:'RK Nyra', date: new Date(2019,5,14),  upvote: 0, downvote: 0},
+    {quote:'If you think women are the weaker sex, try pulling the blanket back to your side',author:'Stuart Turner',submittedBy:'Judd Knight', date: new Date(2019,7,14), upvote: 0, downvote: 0},
 
   ];
   counter:number=0;

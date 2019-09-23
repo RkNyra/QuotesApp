@@ -39,6 +39,7 @@ blockquote span {
     color: #333333;
     font-style: normal;
     margin-top: 1em;
+    font-size: 2.3vh;
 }
 
 .vote {
