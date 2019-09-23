@@ -18,7 +18,7 @@
     <!-- Quote Display Div -->
 
     <div class="quotesDisplay">
-        <app-quote-display (emitdownVote)='downVote($event)' (emitupVote)='upVote($event)' [quotes]='quotes'></app-quote-display>
+        <app-quote-display (emitdownVote)='downVote($event)' (emitupVote)='upVote($event)' [quotes]='quotes' (isHide)='deleteQuote($event,i)'></app-quote-display>
     </div>
 
     <!-- Quote Form Div -->

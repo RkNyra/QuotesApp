@@ -36,6 +36,7 @@ export class HomeComponent implements OnInit {
     quote.downvote = 0;
     quote.date = new Date;
     this.quotes.push(quote)
+    console.log(quote.quote)
   }
   downVote(quote){
     quote.downvote +=1;
@@ -46,6 +47,13 @@ export class HomeComponent implements OnInit {
   quote.upvote +=1;
     console.log(quote);
     
-
-  }
+ }
+ deleteQuote(isHide,index){
+   if(isHide){
+     let toDelete = confirm (`Are you sure you want to delete${this.quotes[1].quote}?`)
+     if(toDelete){
+       this.quotes.splice(index,1)
+       }
+   }
+ }
 }

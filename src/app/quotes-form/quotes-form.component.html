@@ -2,10 +2,10 @@
 <div>
     <h5 class="text-center">Find out how popular your quote is!</h5>
     <hr>
-    <form>
+    <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
         <div class="form-group">
             <label for="insertQuote">Insert Quote</label>
-            <textarea id="quote" class="form-control" placeholder="Insert your quote here" required [(ngModel)]='quotes.quote' name="quote" #quote='ngModel' [ngModelOptions]='{standalone:true}'></textarea>
+            <textarea id="quote" class="form-control" placeholder="Insert your quote here" required [(ngModel)]='newQuote.quote' name="quote" #quote='ngModel'></textarea>
 
             <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger">
                 <p>This input is required</p>
@@ -16,7 +16,7 @@
             <div class="form-group">
                 <!-- quoteAuthorName -->
                 <label for="quoteAuthorName">Quote Author Name</label>
-                <input id="author" name="author" #author="ngModel" class="form-control" type="text" placeholder="Insert Quote Author's Name" required [(ngModel)]='quotes.author' [ngModelOptions]='{standalone:true}'>
+                <input id="author" name="author" #author="ngModel" class="form-control" type="text" placeholder="Insert Quote Author's Name" required [(ngModel)]='newQuote.author'>
 
                 <!-- form validation -->
                 <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
@@ -27,7 +27,7 @@
             <div class="form-group">
                 <!-- submittedByInput -->
                 <label for="submittedBy">Submitted By</label>
-                <input id="submittedBy" name="submittedBy" #submittedBy='ngModel' class="form-control" type="text" placeholder="Insert your name here" required [(ngModel)]='quotes.submittedBy' [ngModelOptions]='{standalone:true}'>
+                <input id="submittedBy" name="submittedBy" #submittedBy='ngModel' class="form-control" type="text" placeholder="Insert your name here" required [(ngModel)]='newQuote.submittedBy'>
 
                 <!-- form validation -->
                 <div [hidden]="submittedBy.valid || submittedBy.pristine" class="alert alert-danger">
@@ -37,7 +37,7 @@
             </div>
         </div>
 
-        <button class="btn btn-outline-dark btn-change" type="button" (click)=' submitQuote() '>Submit</button>
+        <button class="btn btn-outline-dark btn-change" type="submit">Submit</button>
 
     </form>
 </div>

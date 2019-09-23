@@ -21,10 +21,11 @@ quotes: Quote [] = [];
 
 }
 submitQuote(){
+  console.log(this.newQuote)
   this.showForm.emit();
-  this.emitNewQuote.emit(this.quotes);
+  this.emitNewQuote.emit(this.newQuote);
   this.addQuote.emit(this.newQuote);
-  console.log(this.addQuote.emit(this.newQuote));
+  // console.log(this.addQuote.emit(this.newQuote));
   
 }
 }

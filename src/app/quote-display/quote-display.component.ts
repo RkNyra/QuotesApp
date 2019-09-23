@@ -8,10 +8,11 @@ import { Quote } from '../quote';
   styleUrls: ['./quote-display.component.css']
 })
 export class QuoteDisplayComponent implements OnInit {
-@Input() quotes: Quote
+  @Input() quotes: Quote
 
- @Output() emitupVote = new EventEmitter<any>();
+  @Output() emitupVote = new EventEmitter<any>();
   @Output() emitdownVote = new EventEmitter<any>();
+  @Output() isHide = new EventEmitter<boolean>();
 
   constructor() { }
 
@@ -25,5 +26,9 @@ export class QuoteDisplayComponent implements OnInit {
   upVote(quote){
     this.emitupVote.emit(quote);
   }
-
+quoteDelete(Hide: boolean){
+  this.isHide.emit(Hide);
+  console.log(Hide);
 }
+}
+
