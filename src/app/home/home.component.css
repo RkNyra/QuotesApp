@@ -4,6 +4,7 @@
     background-image: url(../../assets/homeBgImg1.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    background-attachment: scroll;
     color: #333;
     font-family: 'Courgette', cursive;
 }
