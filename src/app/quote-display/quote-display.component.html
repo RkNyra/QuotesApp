@@ -1,7 +1,7 @@
 <div class="row">
     <div class="col-lg-4" *ngFor='let quote of quotes'>
         <div>
-            <blockquote>
+            <blockquote appHighlight>
                 <p class="quoteHeight">{{quote.quote}}</p>
 
                 <span>~{{quote.author}}</span>
