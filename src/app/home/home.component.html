@@ -18,9 +18,13 @@
 
 
     <!-- Quote Display Div -->
+    <div class="row">
+        <div class="col-md-4" *ngFor="let quote of quotes;let i=index">
+            <div class="quotesDisplay">
+                <app-quote-display (emitdownVote)='downVote($event)' (emitupVote)='upVote($event)' [quote]='quote' (isHide)='deleteQuote($event, i)'></app-quote-display>
+            </div>
+        </div>
 
-    <div class="quotesDisplay">
-        <app-quote-display (emitdownVote)='downVote($event)' (emitupVote)='upVote($event)' [quotes]='quotes' (isHide)='deleteQuote($event, 1)'></app-quote-display>
     </div>
 
     <!-- Quote Form Div -->

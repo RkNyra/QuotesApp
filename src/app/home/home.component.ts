@@ -19,6 +19,16 @@ export class HomeComponent implements OnInit {
 
   showForm: boolean = false
 
+
+  deleteQuote(isHide, index) {
+    if (isHide) {
+      let toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].quote}?`)
+      // let toDelete = confirm (`Are you sure you want to delete this quote?`)
+      if (toDelete) {
+        this.quotes.splice(index, 1);
+      }
+    }
+  }
   constructor() { }
 
   ngOnInit() {
@@ -48,13 +58,5 @@ export class HomeComponent implements OnInit {
     console.log(quote);
     
  }
- deleteQuote(isHide,index){
-   if(isHide){
-    //  let toDelete = confirm (`Are you sure you want to delete ${this.quotes[index].quote}?`)
-    let toDelete = confirm (`Are you sure you want to delete this quote?`)
-     if(toDelete){
-       this.quotes.splice(index, 1);
-       }
-   }
- }
+
 }
