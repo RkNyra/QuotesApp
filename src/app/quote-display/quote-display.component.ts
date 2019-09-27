@@ -1,7 +1,7 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Quote } from '../quote';
 
-
+import { DateCountPipe} from '../date-count.pipe'
 @Component({
   selector: 'app-quote-display',
   templateUrl: './quote-display.component.html',
@@ -17,6 +17,7 @@ export class QuoteDisplayComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    DateCountPipe
   }
 
   downVote(quote){

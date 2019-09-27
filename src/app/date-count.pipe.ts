@@ -40,25 +40,25 @@ export class DateCountPipe implements PipeTransform {
 
 
 
-  transform(value: any): any {
-
+  transform(value: any, args?: any): any {
+    
     let today: Date = new Date(); //get current date and time
     let todayWithNoTime: any = new Date(today.getFullYear(), today.getMonth(), today.getDate())
 
     var dateDifference = (todayWithNoTime - value)/1000; //returns value in seconds
 
-    console.log('show difference', dateDifference);
+    // console.log('show difference', dateDifference);
    
     let years,months,weeks,days,hours,minutes;
-
+  console.log(value)
     if(dateDifference<=29){
       return `a few seconds ago`
     }
-      else if(dateDifference>=30 && dateDifference<=60){
+    if(dateDifference>=30 && dateDifference<=60){
      return `about a minute ago`
     }
     
-    else if(dateDifference>60 && dateDifference<=3599){
+ if(dateDifference>60 && dateDifference<=3599){
       minutes = Math.floor(value/60);
 
       if(minutes ==1){
@@ -124,4 +124,5 @@ export class DateCountPipe implements PipeTransform {
       }
     }
   }
+    
 }
